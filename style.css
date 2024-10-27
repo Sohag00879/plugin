@@ -1,0 +1,53 @@
+/* ---- CUSTOM TESTIMONIAL STYLING ---- */
+
+/* Container Styling */
+.summary-block-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9; /* Background color for the testimonial section */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Item Styling */
+.summary-block-wrapper .summary-item {
+    text-align: center;
+    padding: 20px;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Initial transform for animation */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Title (Name) Styling */
+.summary-block-wrapper .summary-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Excerpt (Testimonial Text) Styling */
+.summary-block-wrapper .summary-excerpt p {
+    font-size: 1.1em;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Image (Author Picture) Styling */
+.summary-block-wrapper .summary-thumbnail img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Item Styling for Animation */
+.summary-block-wrapper .summary-item.active {
+    opacity: 1; /* Make the active item fully visible */
+    transform: translateY(0); /* Reset transform for smooth animation */
+}
